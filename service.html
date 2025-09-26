@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nestico</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body >
+     <!-- Navbar section -->
+      
+         <nav class=" lg:h-21 md:h-18 h-14 bg-[#0A192F] sticky top-0 z-50  flex   justify-between  lg:px-8 md:px-5 p-3 items-center ">
+          <img src="logo.png" alt="logo" class="text-white lg:w-35 md:w-30 w-22 mt-1" >
+            
+            <div class=" text-gray-200 flex items-center justify-center lg:gap-5 gap-1 md:gap-3 lg:text-lg md:text-md text-xs font-semibold  ">
+            <a href="index.html" class="  hover:bg-cyan-500 hover:text-black lg:px-3 lg:py-2 px-1 py-1  lg:rounded-lg rounded-md  hover:scale-105 duration-300 ease-in-out"><i class="ri-home-4-line lg:text-2xl "></i> Home</a>
+            <button class="  flex items-center justify-center hover:bg-cyan-500 gap-1 hover:text-black   p-1.5  rounded-md lg:rounded-lg hover:scale-105 duration-300 ease-in-out" onclick="loc()">
+                   <i class="ri-map-pin-line"></i>
+                   <p>My Location</p>
+            </button>
+            
+            <button class="  hover:bg-cyan-500 hover:text-black lg:px-3 lg:py-2 px-1 py-1  lg:rounded-lg rounded-md  hover:scale-105 duration-300 ease-in-out" onclick="login()">Login</button>
+            <button class="  bg-orange-600 hover:text-black lg:px-3 lg:py-2 px-1 py-1  lg:rounded-lg rounded-md hover:bg-blue-600 hover:scale-105 duration-300 ease-in-out" onclick="signup()">Signup</button>
+            </div>
+        </nav>
+
+     <!-- service section -->
+
+     <section class="min-h-screen ">
+        <div class="bg-white   flex flex-col  lg:p-5 lg:gap-4 p-4 gap-3">
+           <div class=" bg-gradient-to-r from-purple-700 via-pink-500 to-orange-400  lg:w-full  md:w-full md:h-4/12 h-4/12  flex justify-center items-center rounded-lg lg:p-4 p-2 gap-6">
+            <div class=" h-full lg:w-8/12 flex flex-col  justify-center lg:p-5 p-2 gap-1 md:gap-2 lg:gap-5" >
+              <p class="text-white drop-shadow-xl lg:text-6xl text-sm font-extrabold ">Reliable Home Services at Your <span class="text-cyan-300 lg:text-7xl">Doorstep</span></p>
+              <p class="text-gray-100 lg:text-3xl text-[10px] font-lg">From repairs to cleaning and grooming – all home services at your fingertips, with trusted professionals and fast, convenient service.</p>
+              <form class="hidden lg:border lg:border-2  hover:border-orange-600   lg:p-1 p-0 lg:bg-white lg:flex  lg:overflow-hidden lg:justify-evenly lg:items-center lg:w-8/12   rounded rounded-lg lg:mr-65 mr-0 ">
+              <i class="ri-search-line  font-semibold lg:text-lg text-sm lg:ml-2 m-0" ></i>
+              <input type="text" placeholder="What service do you need?" class="lg:px-3  flex-1 focus:outline-none ">
+              <button class="bg-blue-500 hover:bg-orange-600 text-white font-bold rounded rounded-lg lg:px-5 lg:py-1.5 px-2  ">Search</button>
+            </form>
+            </div>
+
+           
+
+            <div class=" h-full lg:w-4/12 w-full " >
+              <img src="homeservice.png" alt="home service" class=" w-full h-full animate__animated animate__pulse">
+            </div> 
+          </div>
+
+         <!----------------------service --------------------->
+
+          <div class="lg:hidden w-full h-full flex justify-center items-center  gap-1">
+            <form class=" border border-2  py-2 rounded-lg overflow-hidden ">
+              <i class="ri-search-line p-1" ></i>
+              <input type="text" placeholder="What do you need?" class="focus:outline-none  ">
+            </form>
+            <button class="bg-blue-500 p-2 rounded-lg text-white font-semibold">Search</button>
+          </div>
+
+          <h1 class="text-indigo-500 drop-shadow-lg lg:text-6xl text-3xl font-bold text-center m-5 "><span class=" border-b-5 border-gray-500 ">Services</span></h1>
+
+          <!-- card -->
+
+          <div class="grid lg:grid-cols-4 grid-cols-2 lg:gap-4 gap-2 ">
+             <div class="shadow-xl rounded-xl p-2 ">
+              <div class="lg:w-full lg:h-4/12 ">
+                <img src="https://cdn-icons-png.flaticon.com/512/3098/3098409.png" alt="" class="lg:w-4/12 w-full">
+              </div>
+              <div class=" flex flex-col  items-start  gap-2 p-2">
+                <h1 class="lg:text-3xl text-2xl font-bold">Electrical <span class="text-sm text-indigo-500 rounded-full bg-gray-100 p-2">Verified</span></h1>
+                <p class="lg:text-sm text-xs font-semibold text-gray-400">Expert electrical repairs, wiring, switchboard upgrades and appliance installations. Certified technicians with safety-first approach and same-day service.</p>
+              </div>
+              <div class="flex justify-center items-center lg:p-3 p-1.5 ">
+                <button class="hover:scale-105  duration-300 ease-in text-xl font-bold text-gray-100  bg-gradient-to-r from-purple-700 via-pink-500 to-orange-400 hover:bg-gradient-to-r hover:from-red-500 hover:via-orange-500 hover:to-amber-400 px-4 py-2 w-full rounded-xl" onclick="login()">Book now</button>
+              </div>
+             </div>
+
+             <div class="shadow-xl rounded-xl p-2">
+              <div class="lg:w-full lg:h-4/12 ">
+                <img src="https://cdn-icons-png.flaticon.com/512/4310/4310770.png" alt="" class="lg:w-4/12 w-full">
+              </div>
+              <div class=" flex flex-col  items-start  gap-2 p-2">
+                <h1 class="lg:text-3xl text-2xl font-bold">Plumbing <span class="text-sm text-indigo-500 rounded-full bg-gray-100 p-2">Verified</span></h1>
+                <p class="lg:text-sm text-xs font-semibold text-gray-400">Professional plumbing repairs, pipe fittings, leak detection and bathroom installations. Skilled plumbers with quality-first approach and reliable same-day service.</p>
+              </div>
+              <div class="flex justify-center items-center lg:p-3 p-1.5 ">
+                <button class="hover:scale-105  duration-300 ease-in text-xl font-bold text-gray-100  bg-gradient-to-r from-purple-700 via-pink-500 to-orange-400 hover:bg-gradient-to-r hover:from-red-500 hover:via-orange-500 hover:to-amber-400 px-4 py-2 w-full rounded-xl" onclick="login()">Book now</button>
+              </div>
+             </div>
+
+             <div class="shadow-xl rounded-xl p-2">
+              <div class="lg:w-full lg:h-4/12 ">
+                <img src="https://www.shutterstock.com/image-vector/repairman-toolbox-fixing-repairing-refrigerator-600nw-1051730312.jpg" alt="" class="lg:w-4/12 w-full">
+              </div>
+              <div class=" flex flex-col  items-start  gap-2 p-2">
+                <h1 class="lg:text-3xl text-2xl font-bold">Appliance Repair  <span class="text-sm text-indigo-500 rounded-full bg-gray-100 p-2">Verified</span></h1>
+                <p class="lg:text-sm text-xs font-semibold text-gray-400">Certified appliance repairs, AC, fridge, washing machine, and geyser installation. Skilled technicians with safety-first approach and same-day service.</p>
+              </div>
+              <div class="flex justify-center items-center lg:p-3 p-1.5 ">
+                <button class="hover:scale-105  duration-300 ease-in text-xl font-bold text-gray-100  bg-gradient-to-r from-purple-700 via-pink-500 to-orange-400 hover:bg-gradient-to-r hover:from-red-500 hover:via-orange-500 hover:to-amber-400 px-4 py-2 w-full rounded-xl" onclick="login()">Book now</button>
+              </div>
+             </div>
+
+             <div class="shadow-xl rounded-xl p-2">
+              <div class="lg:w-full lg:h-4/12 ">
+                <img src="https://cdn-icons-png.flaticon.com/512/994/994928.png" alt="" class="lg:w-4/12 w-full">
+              </div>
+              <div class=" flex flex-col  items-start  gap-2 p-2">
+                <h1 class="lg:text-3xl text-2xl font-bold">Cleaning <span class="text-sm text-indigo-500 rounded-full bg-gray-100 p-2">Verified</span></h1>
+                <p class="lg:text-sm text-xs font-semibold text-gray-400">Professional home cleaning, kitchen & bathroom sanitization, sofa & carpet wash and water tank maintenance. Skilled cleaners with hygiene-first approach and reliable same-day service.</p>
+              </div>
+              <div class="flex justify-center items-center lg:p-3 p-1.5 ">
+                <button class="hover:scale-105  duration-300 ease-in text-xl font-bold text-gray-100  bg-gradient-to-r from-purple-700 via-pink-500 to-orange-400 hover:bg-gradient-to-r hover:from-red-500 hover:via-orange-500 hover:to-amber-400 px-4 py-2 w-full rounded-xl" onclick="login()">Book now</button>
+              </div>
+             </div>
+
+             <div class="shadow-xl rounded-xl p-2">
+              <div class="lg:w-full lg:h-4/12 ">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/049/621/743/small_2x/a-man-is-working-on-a-table-with-a-hammer-png.png" alt="" class="lg:w-4/12 w-full">
+              </div>
+              <div class=" flex flex-col  items-start  gap-2 p-2">
+                <h1 class="lg:text-3xl text-2xl font-bold">Carpentry <span class="text-sm text-indigo-500 rounded-full bg-gray-100 p-2">Verified</span></h1>
+                <p class="lg:text-sm text-xs font-semibold text-gray-400">Trusted carpentry services, furniture repair & assembly, door and window installations, and wooden flooring maintenance. Skilled craftsmen with quality-first approach and reliable same-day service.</p>
+              </div>
+              <div class="flex justify-center items-center lg:p-3 p-1.5 ">
+                <button class="hover:scale-105  duration-300 ease-in text-xl font-bold text-gray-100  bg-gradient-to-r from-purple-700 via-pink-500 to-orange-400 hover:bg-gradient-to-r hover:from-red-500 hover:via-orange-500 hover:to-amber-400 px-4 py-2 w-full rounded-xl" onclick="login()">Book now</button>
+              </div>
+             </div>
+
+             
+
+             <div class="shadow-xl rounded-xl p-2">
+              <div class="lg:w-full lg:h-4/12 ">
+                <img src="https://cdn-icons-png.flaticon.com/512/18208/18208062.png" alt="" class="lg:w-4/12 w-full">
+              </div>
+              <div class=" flex flex-col  items-start  gap-2 p-2">
+                <h1 class="lg:text-3xl text-2xl font-bold">Vehicle <span class="text-sm text-indigo-500 rounded-full bg-gray-100 p-2">Verified</span></h1>
+                <p class="lg:text-sm text-xs font-semibold text-gray-400">Specialized vehicle services, car and bike repairs, engine diagnostics, tire balancing, coolant replacement, and general maintenance. Skilled mechanics with safety-first approach and reliable same-day service.</p>
+              </div>
+              <div class="flex justify-center items-center lg:p-3 p-1.5 ">
+                <button class="hover:scale-105  duration-300 ease-in text-xl font-bold text-gray-100  bg-gradient-to-r from-purple-700 via-pink-500 to-orange-400 hover:bg-gradient-to-r hover:from-red-500 hover:via-orange-500 hover:to-amber-400 px-4 py-2 w-full rounded-xl" onclick="login()">Book now</button>
+              </div>
+             </div>
+
+             <div class="shadow-xl rounded-xl p-2">
+              <div class="lg:w-full lg:h-4/12 ">
+                <img src="https://cdn-icons-png.flaticon.com/512/1142/1142696.png" alt="" class="lg:w-4/12 w-full">
+              </div>
+              <div class=" flex flex-col  items-start  gap-2 p-2">
+                <h1 class="lg:text-3xl text-2xl font-bold">Cook <span class="text-sm text-indigo-500 rounded-full bg-gray-100 p-2">Verified</span></h1>
+                <p class="lg:text-sm text-xs font-semibold text-gray-400">Expert cooking services, homemade meal preparation, tiffin delivery, party catering, and personalized menu planning. Skilled chefs with hygiene-first approach and reliable same-day service.</p>
+              </div>
+              <div class="flex justify-center items-center lg:p-3 p-1.5 ">
+                <button class="hover:scale-105  duration-300 ease-in text-xl font-bold text-gray-100  bg-gradient-to-r from-purple-700 via-pink-500 to-orange-400 hover:bg-gradient-to-r hover:from-red-500 hover:via-orange-500 hover:to-amber-400 px-4 py-2 w-full rounded-xl" onclick="login()">Book now</button>
+              </div>
+             </div>
+
+             <div class="shadow-xl rounded-xl p-2">
+              <div class="lg:w-full lg:h-4/12 ">
+                <img src="https://cdn-icons-png.flaticon.com/512/769/769656.png" alt="" class="lg:w-4/12 w-full">
+              </div>
+              <div class=" flex flex-col  items-start  gap-2 p-2">
+                <h1 class="lg:text-3xl text-2xl font-bold">Laundry <span class="text-sm text-indigo-500 rounded-full bg-gray-100 p-2">Verified</span></h1>
+                <p class="lg:text-sm text-xs font-semibold text-gray-400">Specialized laundry services, clothes washing, ironing, stain treatment, folding, and delicate fabric care with hygienic handling and fast, reliable service. Skilled staff with quality-first approach and same-day service.</p>
+              </div>
+              <div class="flex justify-center items-center lg:p-3 p-1.5 ">
+                <button class="hover:scale-105  duration-300 ease-in text-xl font-bold text-gray-100  bg-gradient-to-r from-purple-700 via-pink-500 to-orange-400 hover:bg-gradient-to-r hover:from-red-500 hover:via-orange-500 hover:to-amber-400 px-4 py-2 w-full rounded-xl" onclick="login()">Book now</button>
+              </div>
+             </div>
+           
+              <div class="shadow-xl rounded-xl p-2">
+              <div class="lg:w-full lg:h-4/12 ">
+                <img src="https://thumbs.dreamstime.com/b/essential-tile-grout-icon-flooring-projects-renovations-352405871.jpg" alt="" class="lg:w-4/12 w-full">
+              </div>
+              <div class=" flex flex-col  items-start  gap-2 p-2">
+                <h1 class="lg:text-3xl text-2xl font-bold">Tile Grouting <span class="text-sm text-indigo-500 rounded-full bg-gray-100 p-2">Verified</span></h1>
+                <p class="lg:text-sm text-xs font-semibold text-gray-400">Certified tile grouting, repair, and re-sealing services. Skilled technicians with precision-first approach and same-day service.</p>
+              </div>
+              <div class="flex justify-center items-center lg:p-3 p-1.5 ">
+                <button class="hover:scale-105  duration-300 ease-in text-xl font-bold text-gray-100  bg-gradient-to-r from-purple-700 via-pink-500 to-orange-400 hover:bg-gradient-to-r hover:from-red-500 hover:via-orange-500 hover:to-amber-400 px-4 py-2 w-full rounded-xl" onclick="login()">Book now</button>
+              </div>
+             </div>
+           
+              <div class="shadow-xl rounded-xl p-2">
+              <div class="lg:w-full lg:h-4/12 ">
+                <img src="https://cdni.iconscout.com/illustration/premium/thumb/worker-painting-garden-fence-illustration-download-in-svg-png-gif-file-formats--park-paint-woodworking-pack-furniture-illustrations-5761642.png" alt="" class="lg:w-4/12 w-full">
+              </div>
+              <div class=" flex flex-col  items-start  gap-2 p-2">
+                <h1 class="lg:text-3xl text-2xl font-bold">Fence Painting <span class="text-sm text-indigo-500 rounded-full bg-gray-100 p-2">Verified</span></h1>
+                <p class="lg:text-sm text-xs font-semibold text-gray-400">Expert fence painting, wood and metal coating, and finishing services. Skilled painters with quality-first approach and same-day service.</p>
+              </div>
+              <div class="flex justify-center items-center lg:p-3 p-1.5 ">
+                <button class="hover:scale-105  duration-300 ease-in text-xl font-bold text-gray-100  bg-gradient-to-r from-purple-700 via-pink-500 to-orange-400 hover:bg-gradient-to-r hover:from-red-500 hover:via-orange-500 hover:to-amber-400 px-4 py-2 w-full rounded-xl" onclick="login()">Book now</button>
+              </div>
+             </div>
+           
+              <div class="shadow-xl rounded-xl p-2">
+              <div class="lg:w-full lg:h-4/12 ">
+                <img src="https://cdn-icons-png.freepik.com/256/2125/2125377.png?semt=ais_white_label" alt="" class="lg:w-4/12 w-full">
+              </div>
+              <div class=" flex flex-col  items-start  gap-2 p-2">
+                <h1 class="lg:text-3xl text-2xl font-bold">Roof Inspection <span class="text-sm text-indigo-500 rounded-full bg-gray-100 p-2">Verified</span></h1>
+                <p class="lg:text-sm text-xs font-semibold text-gray-400">Specialized roof inspection, leak detection, and structural assessment. Skilled technicians with safety-first approach and same-day service.</p>
+              </div>
+              <div class="flex justify-center items-center lg:p-3 p-1.5 ">
+                <button class="hover:scale-105  duration-300 ease-in text-xl font-bold text-gray-100  bg-gradient-to-r from-purple-700 via-pink-500 to-orange-400 hover:bg-gradient-to-r hover:from-red-500 hover:via-orange-500 hover:to-amber-400 px-4 py-2 w-full rounded-xl" onclick="login()">Book now</button>
+              </div>
+             </div>
+           
+              <div class="shadow-xl rounded-xl p-2">
+              <div class="lg:w-full lg:h-4/12 ">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpVhaJRqMCHzHo-jf3ZkkM-A9J-zdV2yK0zg&s" alt="" class="lg:w-4/12 w-full">
+              </div>
+              <div class=" flex flex-col  items-start  gap-2 p-2">
+                <h1 class="lg:text-3xl text-2xl font-bold">Home Security <span class="text-sm text-indigo-500 rounded-full bg-gray-100 p-2">Verified</span></h1>
+                <p class="lg:text-sm text-xs font-semibold text-gray-400">Expert home security, CCTV installation and device setup. Skilled technicians with safety-first approach and reliable same-day service.</p>
+              </div>
+              <div class="flex justify-center items-center lg:p-3 p-1.5 ">
+                <button class="hover:scale-105  duration-300 ease-in text-xl font-bold text-gray-100  bg-gradient-to-r from-purple-700 via-pink-500 to-orange-400 hover:bg-gradient-to-r hover:from-red-500 hover:via-orange-500 hover:to-amber-400 px-4 py-2 w-full rounded-xl" onclick="login()">Book now</button>
+              </div>
+             </div>
+           
+              <div class="shadow-xl rounded-xl p-2">
+              <div class="lg:w-full lg:h-4/12 ">
+                <img src="https://cdn-icons-png.flaticon.com/512/6348/6348648.png" alt="" class="lg:w-4/12 w-full">
+              </div>
+              <div class=" flex flex-col  items-start  gap-2 p-2">
+                <h1 class="lg:text-3xl text-2xl font-bold">PoolService<span class="text-sm text-indigo-500 rounded-full bg-gray-100 p-2">Verified</span></h1>
+                <p class="lg:text-sm text-xs font-semibold text-gray-400">Specialized pool maintenance, cleaning, chemical balancing, and filter servicing. Skilled technicians with hygiene-first approach and reliable same-day service.</p>
+              </div>
+              <div class="flex justify-center items-center lg:p-3 p-1.5 ">
+                <button class="hover:scale-105  duration-300 ease-in text-xl font-bold text-gray-100  bg-gradient-to-r from-purple-700 via-pink-500 to-orange-400 hover:bg-gradient-to-r hover:from-red-500 hover:via-orange-500 hover:to-amber-400 px-4 py-2 w-full rounded-xl" onclick="login()">Book now</button>
+              </div>
+             </div>
+           
+              <div class="shadow-xl rounded-xl p-2">
+              <div class="lg:w-full lg:h-4/12 ">
+                <img src="https://cdn-icons-png.flaticon.com/512/17321/17321243.png" alt="" class="lg:w-4/12 w-full">
+              </div>
+              <div class=" flex flex-col  items-start  gap-2 p-2">
+                <h1 class="lg:text-3xl text-2xl font-bold">Locksmith <span class="text-sm text-indigo-500 rounded-full bg-gray-100 p-2">Verified</span></h1>
+                <p class="lg:text-sm text-xs font-semibold text-gray-400">Certified locksmith services, key cutting, lock repair, and emergency unlocking. Skilled technicians with safety-first approach and same-day service.</p>
+              </div>
+              <div class="flex justify-center items-center lg:p-3 p-1.5 ">
+                <button class="hover:scale-105  duration-300 ease-in text-xl font-bold text-gray-100  bg-gradient-to-r from-purple-700 via-pink-500 to-orange-400 hover:bg-gradient-to-r hover:from-red-500 hover:via-orange-500 hover:to-amber-400 px-4 py-2 w-full rounded-xl" onclick="login()">Book now</button>
+              </div>
+             </div>
+           
+
+              <div class="shadow-xl rounded-xl p-2">
+              <div class="lg:w-full lg:h-4/12 ">
+                <img src="https://cdn-icons-png.flaticon.com/512/16872/16872629.png" alt="" class="lg:w-4/12 w-full">
+              </div>
+              <div class=" flex flex-col  items-start  gap-2 p-2">
+                <h1 class="lg:text-3xl text-2xl font-bold">Pest Control <span class="text-sm text-indigo-500 rounded-full bg-gray-100 p-2">Verified</span></h1>
+                <p class="lg:text-sm text-xs font-semibold text-gray-400">Certified pest control, termite, cockroach, and insect management with fast, safe, and effective solutions. Skilled technicians with eco-friendly approach and reliable same-day service.</p>
+              </div>
+              <div class="flex justify-center items-center lg:p-3 p-1.5 ">
+                <button class="hover:scale-105  duration-300 ease-in text-xl font-bold text-gray-100  bg-gradient-to-r from-purple-700 via-pink-500 to-orange-400 hover:bg-gradient-to-r hover:from-red-500 hover:via-orange-500 hover:to-amber-400 px-4 py-2 w-full rounded-xl" onclick="login()">Book now</button>
+              </div>
+             </div>
+           
+
+              <div class="shadow-xl rounded-xl p-2">
+              <div class="lg:w-full lg:h-4/12 ">
+                <img src="https://cdn-icons-png.flaticon.com/512/3899/3899424.png" alt="" class="lg:w-4/12 w-full">
+              </div>
+              <div class=" flex flex-col  items-start  gap-2 p-2">
+                <h1 class="lg:text-3xl text-2xl font-bold">Gardening <span class="text-sm text-indigo-500 rounded-full bg-gray-100 p-2">Verified</span></h1>
+                <p class="lg:text-sm text-xs font-semibold text-gray-400">Specialized gardening services, lawn mowing, plant care, pruning and landscaping. Skilled gardeners with eco-first approach and reliable same-day service.</p>
+              </div>
+              <div class="flex justify-center items-center lg:p-3 p-1.5 ">
+                <button class="hover:scale-105  duration-300 ease-in text-xl font-bold text-gray-100  bg-gradient-to-r from-purple-700 via-pink-500 to-orange-400 hover:bg-gradient-to-r hover:from-red-500 hover:via-orange-500 hover:to-amber-400 px-4 py-2 w-full rounded-xl" onclick="login()">Book now</button>
+              </div>
+             </div>
+
+             <div class="shadow-xl rounded-xl p-2">
+              <div class="lg:w-full lg:h-4/12 ">
+                <img src="https://static.vecteezy.com/system/resources/previews/024/246/097/non_2x/solar-maintenance-icon-in-illustration-vector.jpg" alt="" class="lg:w-4/12 w-full">
+              </div>
+              <div class=" flex flex-col   items-start  gap-2 p-2">
+                <h1 class="lg:text-3xl text-2xl font-bold flex flex-wrap  ">SolarService<span class="text-sm text-indigo-500 rounded-full bg-gray-100 p-2">Verified</span></h1>
+                <p class="lg:text-sm text-xs font-semibold text-gray-400">Expert solar maintenance, panel cleaning, and inverter servicing. Skilled technicians with eco-first approach and same-day service.</p>
+              </div>
+              <div class="flex justify-center items-center lg:p-3 p-1.5 ">
+                <button class="hover:scale-105  duration-300 ease-in text-xl font-bold text-gray-100  bg-gradient-to-r from-purple-700 via-pink-500 to-orange-400 hover:bg-gradient-to-r hover:from-red-500 hover:via-orange-500 hover:to-amber-400 px-4 py-2 w-full rounded-xl" onclick="login()">Book now</button>
+              </div>
+             </div>
+
+             <div class="shadow-xl rounded-xl p-2">
+              <div class="lg:w-full lg:h-4/12 ">
+                <img src="https://cdn-icons-png.flaticon.com/512/298/298452.png" alt="" class="lg:w-4/12 w-full">
+              </div>
+              <div class=" flex flex-col  items-start  gap-2 p-2">
+                <h1 class="lg:text-3xl text-2xl font-bold">Chimney Sweep <span class="text-sm text-indigo-500 rounded-full bg-gray-100 p-2">Verified</span></h1>
+                <p class="lg:text-sm text-xs font-semibold text-gray-400">Certified chimney sweep, smoke flue cleaning, and fireplace maintenance. Skilled technicians with hygiene-first approach and same-day service.</p>
+              </div>
+              <div class="flex justify-center items-center lg:p-3 p-1.5 ">
+                <button class="hover:scale-105  duration-300 ease-in text-xl font-bold text-gray-100  bg-gradient-to-r from-purple-700 via-pink-500 to-orange-400 hover:bg-gradient-to-r hover:from-red-500 hover:via-orange-500 hover:to-amber-400 px-4 py-2 w-full rounded-xl" onclick="login()">Book now</button>
+              </div>
+             </div>
+           
+              
+          </div>
+              
+             
+             
+     </section>
+     
+   
+       
+           <!-- footer section -->
+
+<footer class="h-auto   bg-[#0A192F] lg:p-5 p-3">
+  <div class=" lg:h-10/12 grid lg:grid-cols-4  lg:gap-6 gap-4">
+    <div class=" flex flex-col  lg:items-start gap-2 ">
+      <img src="logo.png" alt="logo" class="lg:w-50 w-30 -mb-10 ">
+      <p class=" ml-3 lg:text-center lg:text-lg text-md text-gray-300 font-semibold">Your trusted partner for all home services. Connecting you with verified professionals for quality work at affordable prices.</p>
+    </div>
+    <div class=" flex flex-col lg:items-center  lg:justify-center  ">
+      <p class="text-3xl   text-white font-bold lg:mr-10 ml-2">Services</p>
+      <ul class="text-gray-300 lg:text-xl  text-lg lg:m-6 m-2">
+        <li class="m-1 hover:text-blue-500"><a href="#">Plumber</a></li>
+        <li class="m-1 hover:text-blue-500"><a href="#">Electrical</a></li>
+        <li class="m-1 hover:text-blue-500"><a href="#">Auto Repair</a></li>
+        <li class="m-1 hover:text-blue-500"><a href="#">Appliance Repair</a></li>
+        <li class="m-1 hover:text-blue-500"><a href="#">Furniture rapair</a></li>
+        <li class="m-1 hover:text-blue-500"><a href="#">Painter</a></li>
+      </ul>
+    </div>
+    
+    <div class="flex flex-col justify-center items-start gap-2 mt-1 p-2">
+       <p class="text-3xl text-white font-bold mb-5">Social Media Links</p>
+        <div class="flex justify-center gap-3 items-center">
+          <img src="https://img.freepik.com/premium-psd/facebook-logo-blue-circle_705838-12823.jpg?semt=ais_incoming&w=740&q=80" alt="facebook" class="w-12 rounded-full p-2  hover:shadow-lg shadow-orange-500/50">
+          <a href="https://www.facebook.com/" class="lg:text-xl text-lg font-semibold text-gray-300 hover:text-blue-500">Facebook</a>
+        </div>
+        <div class="flex justify-center gap-3 items-center">
+          <img src="https://img.freepik.com/premium-psd/instagram-logo_971166-164497.jpg?semt=ais_incoming&w=740&q=80" alt="instagram" class="w-12 rounded-full p-2 hover:shadow-lg shadow-orange-500/50">
+          <a href="https://www.instagram.com/" class="lg:text-xl text-lg font-semibold text-gray-300 hover:text-blue-500">Instagram</a>
+        </div>
+        <div class="flex justify-center gap-3 items-center">
+          <img src="https://img.freepik.com/premium-vector/vector-linkedin-apps-logo-rounded-asset-isolated_1004619-457.jpg?semt=ais_incoming&w=740&q=80" alt="linkdin" class="w-12 rounded-full p-2 hover:shadow-lg shadow-orange-500/50">
+          <a href="https://www.linkedin.com/" class="lg:text-xl text-lg font-semibold text-gray-300 hover:text-blue-500">Linkdin</a>
+        </div>
+        <div class="flex justify-center gap-3 items-center">
+          <img src="https://img.freepik.com/premium-vector/youtube-color-icons_1209566-1.jpg?semt=ais_incoming&w=740&q=80" alt="youtube" class="w-12 rounded-full p-2 hover:shadow-lg shadow-orange-500/50">
+          <a href="https://www.youtube.com/" class="lg:text-xl text-lg font-semibold text-gray-300 hover:text-blue-500">YouTube</a>
+        </div>
+    </div>
+
+    <div class=" flex flex-col items-start justify-center gap-5 lg:p-10 p-2 lg:pb-25 pb-10">
+      <p class="text-3xl text-white font-bold ">Contact</p>
+      <div class=" flex justify-center items-center lg:gap-2 gap-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/4367/4367049.png" alt="telephone" class="w-8 lg:w-10">
+        <p class="text-lg text-gray-300">+91 8000-123-456</p>
+      </div>
+      <div class=" flex justify-center items-center lg:gap-2 gap-4">
+        <img src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Mail-512.png" alt="Email" class="w-8 lg:w-10">
+        <p class="text-lg text-gray-300">support@nestico.com</p>
+      </div>
+      <div class=" flex justify-center items-center lg:gap-2 gap-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/8567/8567636.png" alt="location" class="w-8 lg:w-10">
+        <p class="text-lg text-gray-300">Kanpur, Up, India</p>
+      </div>
+    </div>
+  </div>
+ <div>
+</div>
+<div class="border-t-2 border-gray-500 h-2/12  flex justify-center items-center" >
+     <p class="lg:text-xl text-md text-gray-400">© 2025 Nestico. All rights reserved.</p>
+</div>
+</footer>
+          
+    
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
