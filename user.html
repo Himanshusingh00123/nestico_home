@@ -44,28 +44,26 @@
         </button>
 
            <i class="ri-user-line text-black lg:px-2 lg:py-1 px-1.5 py-1 bg-white rounded-full "></i>
-        <select 
-           name="select" 
-           id="drop" 
-           class="w-4 cursor-pointer lg:mr-5 " 
-           onchange="logout(event)">
-           
-        <option 
-          value="setting" 
-          class="text-black font-semibold ">
-          User Setting
-        </option>
-         
-        <option 
-          value="logout" 
-          class="text-black font-semibold " >
-          Logout
-          <i class="ri-logout-box-r-line "></i>
-        </option>
-        </select>          
+            <button onclick="showside()" class="hover:scale-115 hover:text-orange-500"><i class="ri-arrow-down-s-line lg:text-xl " ></i></button>
       </div>
             </div>
   </nav>
+
+  <aside >
+    <div id="side"  class="lg:h-4/12 h-3/12 fixed  right-0 lg:top-21 md:top-18 top-14  bg-white shadow-xl rounded-bl-lg  transition-transform duration-300 translate-x-full flex flex-col  p-3 gap-2 lg:p-5 lg:gap-5">
+
+      <div class="shadow-lg hover:scale-105 hover:bg-gray-200 flex justify-center items-center h-4/12 rounded-lg lg:p-3 p-1">
+        <button class="lg:text-xl text-sm text-black font-bold">Profile Setting</button>
+      </div>
+      <div class="shadow-lg hover:scale-105 hover:bg-gray-200 flex justify-center items-center h-4/12 rounded-lg">
+        <button class="lg:text-xl text-sm text-black font-bold" onclick="address()">Add Address</button>
+      </div>
+      <div class="shadow-lg hover:scale-105 hover:bg-gray-200 flex justify-center items-center h-4/12 rounded-lg">
+        <button class="lg:text-xl text-sm text-black font-bold" onclick="logout()">
+          <i class="ri-logout-box-line"></i> Logout</button>
+      </div>
+    </div>
+  </aside>
 
 <!-- section page -->
  <section class="min-h-screen lg:h-screen lg:p-4 p-2 flex flex-col  lg:gap-4 gap-1">
